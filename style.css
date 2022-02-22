@@ -1,88 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Mukta:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Open+Sans+Condensed:ital,wght@1,300&family=Press+Start+2P&family=Sigmar+One&display=swap');
 
 *{
     margin: 0;
     padding: 0 ;
     box-sizing: border-box;
-    font-family: Dongle, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vw;
+    color:rgb(167, 167, 167);
 }
 
 body{
-     background: #abf5ff ;
+    background: #ffffff ;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    text-align: center;
+}
+
+body>name{
+
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    left: -5%;
+}
+.Graffiti{
+
+    font-size: 4vw;
+    font-family: 'Sigmar One', cursive;
+    background-image: url("background.png") ;
+    color: rgb(255, 255, 255);
+
+    border: 3px solid rgb(26, 33, 136);
+    background-color: rgb(26, 33, 136);
 }
 
 header{
 
-    margin:10% auto;
-    padding: 0.2%;
+    position: relative;
+    margin-top:auto;
+    padding: 15%;
     color: rgb(0, 0, 0);
     text-align: center;
-    border: 3px solid rgb(0, 0, 0);
+    border: 4vw solid rgb(26, 33, 136);
     border-radius: 6px;
-    width: 80%;
+    width: 70%;
+    height: 60%;
+    left: 10%;
+    background-color: rgb(72, 72, 82);
+    
 }
+
 
 header > level{
-    position: relative;
-    top: -45px;
-    font-size: 24px;
-    line-height: 30px;
+    position: absolute;
+    text-align: left;
+    top: 5%;
+    left:3%;
+    line-height: 2vw;
 }
-header > name{
 
-    font-size: 60px;
-    position: relative;
-    top:-50px;
-}
 
 header > scoreboard{
-    position : relative;
-    top: -50px;
-    right: -38%;
-    font-size: 40px;
-    color:rgba(0, 0, 0, 0.541);
+    position : absolute;
+    bottom: 5%;
+    right: 3%;
+    color: aquamarine;
+    font-size: 3vw;
 }
 
 
-.math-problem {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: rgb(15, 6, 6);
+.questions {
+
+    color: rgb(255, 255, 255);
+    text-align: cenleftter;
+    position: relative;
+
+    top : -5%;
+    font-size: 3vw;
+    padding-bottom: 10%;
+}
+
+.expression{
+
+    color: rgb(255, 255, 255);
     text-align: left;
-    font-size:40px;
+    position: relative;
+    padding-bottom: 5%;
+
 }
+
 
 input[type=number], select {
 
-    height: 30px;
+    height: 4vw;
     position: relative ;
-    top:-5px;
-    font-size: 30px;
-    margin: 4px;
+    font-size: 2vw;
     text-align: center;
     width: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgba(0, 0, 139, 0);
 
 }
 
 button{
 
-    width: 80px;
-    height: 40px;
-    font-size: 28px;
-    background-color: white;
-    border-radius: 1px;
+    width: 90px;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
 }
 
-button2{
-    width: 300px;
-    height: 40px;
-    font-size: 28px;
-    background-color: white;
-    border-radius: 1px;
-    color: black;
-    border-color: black;
-    border-width: 4px;
-}
 
 @keyframes blink{
 
@@ -92,5 +125,18 @@ button2{
     50%{color:red; 
         opacity:0.5;
     }
-    100%{color: rgba(240, 248, 255, 0.541);}
+    100%{color: aquamarine;}
 }
+
+body > game{
+
+    position: relative;
+    padding-left: 27%;
+    padding-right: 27%;
+    padding-bottom: 50%;
+    left: -5%;
+
+
+
+}
+

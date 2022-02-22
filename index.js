@@ -200,7 +200,7 @@ function submitAnswer(){
             audioFail.currentTime = 0;
             audioFail.play();}
         
-        else if(mathScore == 0){
+        else if(progCount - mathScore > 3){
             audioFail.pause();
             setLevel("demote");
             audioLvldown.play();
