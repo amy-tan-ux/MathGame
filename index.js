@@ -193,14 +193,14 @@ function submitAnswer(){
         progCount +=1;
         streak = 0; // break streak
 
-        if (progCount < 5){
+        if (progCount < 3){
             mathTotal += 2;
             totalScore_span.innerHTML=mathTotal;
             audioSucceed.pause();
             audioFail.currentTime = 0;
             audioFail.play();}
         
-        else if(progCount - mathScore > 3){
+        else if(progCount - mathScore > 1){
             audioFail.pause();
             setLevel("demote");
             audioLvldown.play();
